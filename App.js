@@ -1,20 +1,15 @@
-import { StatusBar } from 'expo-status-bar';
+import { useEffect , useState } from 'react';
 import { StyleSheet, Text, View } from 'react-native';
+import MainNavigator from './navigation/SmartHome';
 
+
+
+// Optionally import the services that you want to use
 export default function App() {
   return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
+    <MainNavigator></MainNavigator>
   );
 }
+const styles = StyleSheet.create({});
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
+
